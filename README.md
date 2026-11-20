@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cloud Cache
 
 A multi-tenant key-value store in Rust with two APIs over one shared store:
@@ -230,3 +231,7 @@ printf 'AUTH %s\nSET greeting hi there\nGET greeting\nQUIT\n' "$TOKEN" | nc loca
 - **TLS** is expected to end at the load balancer. For end-to-end encryption, add `rustls` on the listeners.
 
 Contributions toward any of these are welcome.
+=======
+# Cloud-Cache
+rust based cloud key-value http and tcp server with a front-end, completely FOSS.
+>>>>>>> ddfa247bc407d9ed4aacacd912efccdc8d9528f4
