@@ -20,7 +20,7 @@ The dashboard, signed in as an org admin in the demo:
 
 | Usage across all nodes | Managing members |
 | --- | --- |
-| ![Usage page with storage, keys, reads and writes](/images/Cloud-Cache-Usage.png) | ![Members page with admins and add-by-email](images/Cloud-Cache-Members.png) |
+| ![Usage page with storage, keys, reads and writes](images/Cloud-Cache-Usage.png) | ![Members page with admins and add-by-email](images/Cloud-Cache-Members.png) |
 
 | Connection instructions | Sign-in | On a phone |
 | --- | --- | --- |
