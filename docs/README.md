@@ -16,7 +16,7 @@ Cloud Cache stores keys and values in memory, isolates them per organization, an
 
 The dashboard, signed in as an org admin in the demo:
 
-![Browsing and editing an organization's keys](images/Cloud-Cache-Dashboard.png)
+![Browsing and editing an organization's keys](images/Cloud-Cache-Dashboard-KV.png)
 
 | Usage across all nodes | Managing members |
 | --- | --- |
