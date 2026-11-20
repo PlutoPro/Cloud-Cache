@@ -16,15 +16,15 @@ Cloud Cache stores keys and values in memory, isolates them per organization, an
 
 The dashboard, signed in as an org admin in the demo:
 
-![Browsing and editing an organization's keys](docs/images/Cloud-Cache-Dashboard.png)
+![Browsing and editing an organization's keys](images/Cloud-Cache-Dashboard.png)
 
 | Usage across all nodes | Managing members |
 | --- | --- |
-| ![Usage page with storage, keys, reads and writes](docs/images/usage.png) | ![Members page with admins and add-by-email](docs/images/members.png) |
+| ![Usage page with storage, keys, reads and writes](/images/usage.png) | ![Members page with admins and add-by-email](images/members.png) |
 
 | Connection instructions | Sign-in | On a phone |
 | --- | --- | --- |
-| ![Connect page with HTTP and TCP examples](docs/images/connect.png) | ![Sign-in page](docs/images/Cloud-Cache-Login.png) | <img src="docs/images/mobile.png" alt="Keys page on a phone" width="220"> |
+| ![Connect page with HTTP and TCP examples](images/connect.png) | ![Sign-in page](images/Cloud-Cache-Login.png) | <img src="images/mobile.png" alt="Keys page on a phone" width="220"> |
 
 > **Status:** early and actively developed. Data lives in memory only, with no persistence or replication yet. See [Limitations and roadmap](#limitations-and-roadmap) before using it for anything you can't afford to lose.
 
