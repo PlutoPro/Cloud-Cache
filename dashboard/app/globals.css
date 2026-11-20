@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import "@fontsource/atkinson-hyperlegible-next/400.css";
+@import "@fontsource/atkinson-hyperlegible-next/600.css";
+@import "@fontsource/atkinson-hyperlegible-next/800.css";
+@import "@fontsource/atkinson-hyperlegible-mono/400.css";
+@import "@fontsource/atkinson-hyperlegible-mono/700.css";
+
+/* Cloud Cache: a metered utility. Cool fog paper, navy ink, meter amber for readouts and actions. */
+@theme {
+  --color-fog: #e8edef;
+  --color-paper: #ffffff;
+  --color-ink: #13212b;
+  --color-ink-soft: #24384a;
+  --color-slate: #4f616b;
+  --color-rule: #c6d1d6;
+  --color-amber: #e8a800;
+  --color-amber-soft: #fbefc6;
+  --color-alert: #a3261b;
+  --color-alert-soft: #f8e1de;
+  --color-ok: #1f6b45;
+
+  --font-sans: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, monospace;
+
+  /* Modular scale (1.25) from a 16px body */
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.563rem;
+  --text-2xl: 1.953rem;
+  --text-3xl: 2.441rem;
+}
+
+html {
+  background: var(--color-fog);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "tnum" 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-amber);
+  outline-offset: 2px;
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Meter readout: the one loud element. Amber digits in an ink window. */
+.readout {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--color-amber);
+  background: var(--color-ink);
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 0 0 1px #2c4255, inset 0 6px 12px rgb(0 0 0 / 0.35);
+}
+
+.field {
+  width: 100%;
+  border: 1px solid var(--color-rule);
+  background: var(--color-paper);
+  border-radius: 4px;
+  padding: 0.55rem 0.7rem;
+}
+.field:focus-visible {
+  outline-offset: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 4px;
+  padding: 0.5rem 0.95rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--color-amber);
+  color: var(--color-ink);
+}
+.btn-primary:hover {
+  background: #f5b80f;
+}
+.btn-quiet {
+  background: transparent;
+  border-color: var(--color-rule);
+  color: var(--color-ink);
+}
+.btn-quiet:hover {
+  background: var(--color-paper);
+}
+.btn-danger {
+  background: transparent;
+  color: var(--color-alert);
+  border-color: color-mix(in srgb, var(--color-alert) 35%, transparent);
+}
+.btn-danger:hover {
+  background: var(--color-alert-soft);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
